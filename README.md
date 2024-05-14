@@ -1,30 +1,49 @@
 # Ngrok Port Forwarder
 
-A simple Python script to forward a local port to a public URL using Ngrok.
+Forward a local port to a public URL using Ngrok.
 
-**Features**
+## Overview
 
-- Forward a local port to a public URL using Ngrok
-- Supports TCP and UDP protocols
-- Optional authtoken, region, and binary path settings
-- Rich console interface for easy use
+This project provides a Python script to forward a local port to a public URL using Ngrok. It allows developers to expose their local development environment to the world with ease.
 
-**Getting Started**
+## Features
 
-1. Install the required dependencies: `pip3 install -r requirements.txt`
-2. Download or clone this repository
-3. Run the script: `python3 main.py`
-4. Follow the prompts to enter the port, protocol, and optional settings
+- **Port Forwarding**: Forward a local port to a public URL using Ngrok.
+- **Protocol Support**: Supports TCP and UDP protocols.
+- **Optional Settings**: Optional authtoken, region, and binary path settings for customization.
+- **Rich Console Interface**: Rich console interface for easy use.
 
-**Usage**
+## TODO:
 
-- Enter the port to forward (e.g. 8080)
-- Enter the protocol (e.g. tcp or udp)
-- Optional: enter the authtoken, region, and binary path settings
-- The script will start the Ngrok tunnel and print the public URL
-- Press Ctrl+C to stop the tunnel and exit the script
+- [ ] **Add Support for Multiple Protocols**: Implement support for multiple protocols simultaneously.
 
-**Configuration**
+## Usage
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/real0x0a1/ngrok-port-forwarder.git
+```
+
+2. Install dependencies:
+
+```bash
+pip3 install -r requirements.txt
+```
+
+### Usage
+
+1. Run the script `main.py`:
+
+```bash
+python3 main.py
+```
+
+2. Follow the prompts to enter the port, protocol, and optional settings.
+
+## Configuration
 
 You can set the following environment variables to customize the script:
 
@@ -32,18 +51,21 @@ You can set the following environment variables to customize the script:
 - `NGROK_REGION`: the Ngrok region to use (e.g. us, eu, etc.)
 - `NGROK_BINARY_PATH`: the path to the Ngrok binary
 
-**Contributing**
+## Acknowledgements
 
-Contributions are welcome! If you'd like to add new features or fix bugs, please open a pull request.
+- [Ngrok](https://github.com/inconshreveable/ngrok)
+- [Pyngrok](https://github.com/alexdlaird/pyngrok)
+- [Rich](https://github.com/Textualize/rich)
 
-**Acknowledgments**
+## Contributing
 
-This script uses the following libraries:
+Contributions are welcome! Fork the repository and submit a pull request.
 
-- Pyngrok: a Python wrapper for Ngrok
-- Rich: a Python library for rich text formatting
+## Issues
 
-**Author**
+Please open an issue on the GitHub repository for any bugs or feature requests.
+
+## Author
 
 real0x0a1 (Ali)
 
